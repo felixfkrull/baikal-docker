@@ -1,4 +1,4 @@
 #!/bin/sh
 
 php-fpm7
-nginx
+exec nginx
