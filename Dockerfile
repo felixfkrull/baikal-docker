@@ -16,9 +16,6 @@ RUN apk update \
 
 RUN mkdir -p /run/nginx
 
-COPY ./nginx.conf /etc/nginx/nginx.conf
-COPY ./entrypoint.sh /entrypoint.sh
-
 RUN wget -O baikall.zip  https://github.com/sabre-io/Baikal/releases/download/${VERSION}/baikal-${VERSION}.zip
 RUN unzip baikall.zip -d /var/www && rm -f baikall.zip
 
@@ -27,3 +24,6 @@ RUN chown -R nobody:nobody /var/www/baikal/Specific
 EXPOSE 80
 
 ENTRYPOINT ["/entrypoint.sh"]
+
+COPY ./nginx.conf /etc/nginx/nginx.conf
+COPY ./entrypoint.sh /entrypoint.sh
