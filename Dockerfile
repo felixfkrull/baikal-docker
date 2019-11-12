@@ -23,7 +23,8 @@ RUN apk add \
     php7-dom \
     php7-mbstring \
     php7-xmlwriter \
-    php7-xmlreader
+    php7-xmlreader \
+    php7-json
 
 EXPOSE 80
 
