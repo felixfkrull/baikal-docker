@@ -1,0 +1,1 @@
+When there is a new baikal version just update the VERSION variable in the Dockerfile and build a new image.
