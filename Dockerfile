@@ -9,6 +9,7 @@ RUN wget -O baikal.zip  https://github.com/sabre-io/Baikal/releases/download/${V
 RUN unzip baikal.zip -d /var/www && rm -f baikal.zip
 
 RUN chown -R nobody:nobody /var/www/baikal/Specific
+RUN chown -R nobody:nobody /var/www/baikal/config
 
 RUN apk add \
     php7 \
