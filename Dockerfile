@@ -1,6 +1,6 @@
 FROM alpine:3.15
 
-ENV VERSION 0.9.2
+ENV VERSION 0.9.3
 
 RUN apk update && apk add nginx
 RUN mkdir -p /run/nginx
@@ -12,20 +12,20 @@ RUN chown -R nobody:nobody /var/www/baikal/Specific
 RUN chown -R nobody:nobody /var/www/baikal/config
 
 RUN apk add \
-    php7 \
-    php7-fpm \
-    php7-session \
-    php7-openssl \
-    php7-pdo \
-    php7-pdo_sqlite \
-    php7-mysqli \
-    php7-pdo_mysql \
-    php7-ctype \
-    php7-dom \
-    php7-mbstring \
-    php7-xmlwriter \
-    php7-xmlreader \
-    php7-json
+    php8 \
+    php8-fpm \
+    php8-session \
+    php8-openssl \
+    php8-pdo \
+    php8-pdo_sqlite \
+    php8-mysqli \
+    php8-pdo_mysql \
+    php8-ctype \
+    php8-dom \
+    php8-mbstring \
+    php8-xmlwriter \
+    php8-xmlreader \
+    php8-json
 
 EXPOSE 80
 
