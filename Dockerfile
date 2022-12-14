@@ -24,8 +24,7 @@ RUN apk add \
     php8-dom \
     php8-mbstring \
     php8-xmlwriter \
-    php8-xmlreader \
-    php8-json
+    php8-xmlreader
 
 EXPOSE 80
 
