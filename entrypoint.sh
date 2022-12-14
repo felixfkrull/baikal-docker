@@ -5,5 +5,5 @@
 sed -i 's/public \$allowUnauthenticatedAccess = true;/public \$allowUnauthenticatedAccess = false;/' /var/www/baikal/vendor/sabre/dav/lib/DAVACL/Plugin.php
 sed -i 's/memory_limit = 128M/memory_limit = 256M/' /etc/php7/php.ini
 
-php-fpm7
+php-fpm8
 exec nginx
