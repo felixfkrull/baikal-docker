@@ -12,19 +12,19 @@ RUN chown -R nobody:nobody /var/www/baikal/Specific
 RUN chown -R nobody:nobody /var/www/baikal/config
 
 RUN apk add \
-    php8 \
-    php8-fpm \
-    php8-session \
-    php8-openssl \
-    php8-pdo \
-    php8-pdo_sqlite \
-    php8-mysqli \
-    php8-pdo_mysql \
-    php8-ctype \
-    php8-dom \
-    php8-mbstring \
-    php8-xmlwriter \
-    php8-xmlreader
+    php82 \
+    php82-fpm \
+    php82-session \
+    php82-openssl \
+    php82-pdo \
+    php82-pdo_sqlite \
+    php82-mysqli \
+    php82-pdo_mysql \
+    php82-ctype \
+    php82-dom \
+    php82-mbstring \
+    php82-xmlwriter \
+    php82-xmlreader
 
 EXPOSE 80
 
