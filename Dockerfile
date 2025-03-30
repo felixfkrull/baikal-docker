@@ -1,6 +1,6 @@
 FROM alpine:3.19
 
-ENV VERSION 0.9.5
+ENV VERSION 0.10.1
 
 RUN apk update && apk add nginx
 RUN mkdir -p /run/nginx
